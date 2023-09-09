@@ -84,6 +84,9 @@ h1 {
 
 /* -----------Carousel------------- */
 
+.carousel {
+  max-height: fit-content;
+}
 .carousel-inner {
   position: relative;
 
@@ -94,16 +97,31 @@ h1 {
 .carousel:hover .carouesl-img {
   margin: 0 auto;
   max-height: 100%;
-  animation: moveUpDown 5s ease infinite alternate;
+  /* animation: moveUpDown 5s ease infinite alternate; */
 }
 
 /* Define the vertical movement animation */
 @keyframes moveUpDown {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   100% {
-    transform: translateY(7%);
+    transform: translate(7%);
+  }
+}
+
+.carouesl-img {
+  margin: 0 auto;
+  max-height: 100%;
+  animation: zooming 4s ease infinite alternate;
+}
+
+@keyframes zooming {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
 
@@ -453,8 +471,7 @@ h1 {
     background-repeat: no-repeat;
     position: absolute;
     background-attachment: fixed;
-  
-    left: 0;
+      left: 0;
     right: 0;
     margin: 29% 0;*/
 
@@ -469,13 +486,6 @@ h1 {
     position: absolute;
     transform: translateY(50%);
   }
-
-  /* .product {
-  
-  background: linear-gradient(#000000b5, #000000b5),
-    url(/assets/flat-lay-vegetables-frame-with-copy-space_23-2149271076.avif);
-  background-size: cover; 
-  background-attachment: fixed; */
 
   .about_taital {
     font-size: 40px;
@@ -513,14 +523,16 @@ h1 {
     gap: 1px;
   }
   .fruit-image {
-    width: 22rem;
-    height: 13rem;
+    width: 265px;
+    height: 220px;
     position: relative;
     transition: filter 0.3s ease;
   }
 
   .fruit-image img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .fruit-image .h6 {

@@ -37,7 +37,6 @@ var fruits = [
   { img: "assets/products/Dryfruits.avif", name: "Dryfruits" },
   { img: "assets/products/cauliflower.avif", name: "Cauliflower" },
   { img: "assets/products/Almonds.avif", name: "Almonds" },
-  { img: "assets/GlobalFreshlogoArb.jpg", name: "Almonds" },
 ];
 
 // Get the container div
@@ -49,13 +48,13 @@ for (var i = 0; i < fruits.length; i++) {
 
   // Create a div for each fruit item
   var fruitDiv = document.createElement("div");
-  fruitDiv.classList.add("fruit-image", "border-1");
+  fruitDiv.classList.add("fruit-image");
 
   // Create an image element
   var imgElement = document.createElement("img");
   imgElement.src = fruit.img;
   imgElement.alt = "";
-  imgElement.classList.add("img", "w-100", "h-100", "object-fit-cover");
+  imgElement.classList.add("img");
 
   // Create an h6 element for the name
   var nameElement = document.createElement("h6");
