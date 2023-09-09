@@ -325,7 +325,7 @@ h1 {
 .management-box {
   background-color: #e5ffef;
   background-image: linear-gradient(#c0ffd8d9, #e0f9ffde),
-    url(/assets/colorful-collage-fruits-texture-close-up.jpg);
+    url(assets/colorful-collage-fruits-texture-close-up.jpg);
   background-size: cover;
   background-attachment: fixed;
 
@@ -477,7 +477,7 @@ h1 {
 
     position: relative;
     background: linear-gradient(#000000b5, #000000b5),
-      url(/assets/flat-lay-vegetables-frame-with-copy-space_23-2149271076.avif);
+      url(assets/flat-lay-vegetables-frame-with-copy-space_23-2149271076.avif);
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
