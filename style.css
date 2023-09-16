@@ -5,13 +5,17 @@
 
   --bs-gutter-x: 0rem !important;
   --bs-gutter-y: 0rem !important;
+  --bs-navbar-active-color: var(--color2) !important;
 }
+
 * {
   font-family: "Raleway", sans-serif;
 }
+
 p {
   font-family: "Montserrat", sans-serif;
 }
+
 h1 {
   color: var(--color2);
 }
@@ -22,16 +26,27 @@ h1 {
   right: 17px;
   z-index: 5;
   cursor: pointer;
+
   .bi {
     color: var(--color2);
   }
 }
 
 /* -----------NAVBAR------------- */
+.header {
+  color: #ffffff;
+  background: var(--color2);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--color2) !important;
+
+}
+
 .navbar {
   background-color: transparent;
   transition: background-color 0.5s ease;
-  margin-top: 3rem;
 
   .navbar-brand {
     font-size: 1.75rem;
@@ -40,11 +55,11 @@ h1 {
   }
 
   .nav-link.active {
-    color: rgb(255, 255, 255) !important;
+    color: var(--color2);
   }
 
   .nav-link {
-    color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
 
@@ -52,6 +67,7 @@ h1 {
       color: var(--color2);
     }
   }
+
   .contact {
     display: none;
   }
@@ -65,21 +81,26 @@ h1 {
   .nav-link {
     color: rgb(37, 37, 37);
   }
+
   .nav-link.active {
     color: rgb(37, 37, 37) !important;
   }
+
   .contact {
     display: block;
   }
 }
+
 @media (max-width: 540px) {
   .navbar {
     margin-top: 0rem;
   }
+
   .header {
     display: none;
   }
 }
+
 /* -----------NAVBAR------------- */
 
 /* -----------Carousel------------- */
@@ -87,6 +108,7 @@ h1 {
 .carousel {
   max-height: fit-content;
 }
+
 .carousel-inner {
   position: relative;
 
@@ -105,6 +127,7 @@ h1 {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translate(7%);
   }
@@ -116,10 +139,28 @@ h1 {
   animation: zooming 4s ease infinite alternate;
 }
 
+.fadeIn {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(.8);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
 @keyframes zooming {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.2);
   }
@@ -136,10 +177,11 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#0000004a, rgb(0 0 0 / 72%));
+  background: linear-gradient(#00000000, rgb(0 0 0 / 59%));
   opacity: 0.9;
   pointer-events: none;
 }
+
 .carousel-caption {
   position: absolute;
   right: 0%;
@@ -157,6 +199,7 @@ h1 {
     height: 100%;
     margin-right: 10px;
   }
+
   .h5 {
     font-weight: 900;
     color: var(--color2);
@@ -169,6 +212,7 @@ h1 {
     text-shadow: -1px -1px 3px black;
     font-weight: 700;
   }
+
   .h1 {
     font-family: "Kurale", serif;
     font-style: italic;
@@ -182,6 +226,7 @@ h1 {
     height: 100vh !important;
   } */
 }
+
 @media (max-width: 540px) {
   .carousel-caption {
     margin-bottom: 4.25rem;
@@ -192,6 +237,7 @@ h1 {
       height: 59px;
       margin-right: 10px;
     }
+
     .h5 {
       font-size: 34px;
     }
@@ -199,6 +245,7 @@ h1 {
     .h6 {
       font-size: 15px;
     }
+
     .h1 {
       font-size: 22px;
     }
@@ -280,6 +327,7 @@ h1 {
           border-radius: 5px;
           text-align: center;
         }
+
         .a:hover {
           color: #4a4949;
           border: 1px solid #4a4949;
@@ -304,6 +352,7 @@ h1 {
       .about_taital_1 {
         font-size: 20px !important;
       }
+
       .about_text {
         font-size: 15px !important;
       }
@@ -324,9 +373,8 @@ h1 {
 /*--------------- Management2----------------*/
 
 .management-box {
-  background-color: #e5ffef;
-  background-image: linear-gradient(#c0ffd8d9, #e0f9ffde),
-    url(assets/colorful-collage-fruits-texture-close-up.jpg);
+
+  background-image: linear-gradient(#000000a8, #00151ade), url(assets/colorful-collage-fruits-texture-close-up.jpg);
   background-size: cover;
   background-attachment: fixed;
 
@@ -350,8 +398,9 @@ h1 {
     left: calc(50% - 37%);
   }
 }
+
 .testimonial {
-  border-left: 3px solid #045e61;
+  border-left: 3px solid#ffffff;
   padding: 70px 0 70px 228px;
   position: relative;
   margin-top: 25px;
@@ -362,18 +411,21 @@ h1 {
   content: "";
   width: 320px;
   height: 55px;
-  border-right: 3px solid #06394f;
+  border-right: 3px solid #ffffff;
   position: absolute;
   left: 0;
 }
+
 .testimonial:before {
-  border-top: 3px solid var(--color1);
+  border-top: 3px solid #ffffff;
   top: 0;
 }
+
 .testimonial:after {
-  border-bottom: 3px solid var(--color1);
+  border-bottom: 3px solid #ffffff;
   bottom: 0;
 }
+
 .testimonial .pic {
   width: 149px;
   height: 149px;
@@ -381,6 +433,7 @@ h1 {
   top: 134px;
   left: 50px;
 }
+
 .testimonial .pic img {
   width: 100%;
   height: auto;
@@ -398,6 +451,7 @@ h1 {
   line-height: 27px;
   position: relative;
 }
+
 .testimonial .description:before {
   content: "\f10d";
   font-family: "Font Awesome 5 Free";
@@ -406,14 +460,16 @@ h1 {
   top: -70px;
   left: 0;
   font-size: 20px;
-  color: #7a7e82;
+  color: #ffffff;
 }
+
 .testimonial .testimonial-title {
   font-size: 22px;
   font-weight: 800;
   color: #212121;
   text-transform: capitalize;
 }
+
 .testimonial .post {
   display: block;
   font-size: 15px;
@@ -427,6 +483,7 @@ h1 {
     padding: 80px 0 80px 265px;
   }
 }
+
 @media (max-width: 768px) {
   .about_taital {
     font-size: 25px !important;
@@ -438,27 +495,33 @@ h1 {
     left: calc(50% - 50%) !important;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .testimonial {
     padding: 0;
     border: none;
   }
+
   .testimonial:before,
   .testimonial:after {
     border: none;
   }
+
   .testimonial .pic {
     position: relative;
     top: 0;
     left: 0;
   }
+
   .testimonial .description {
     margin-top: 15px;
   }
+
   .testimonial .description:before {
     content: "";
   }
 }
+
 /*--------------- Management2----------------*/
 
 /*--------------- PRODUCTS----------------*/
@@ -486,6 +549,7 @@ h1 {
     right: 0;
     position: absolute;
     transform: translateY(50%);
+    z-index: -4;
   }
 
   .about_taital {
@@ -523,6 +587,7 @@ h1 {
   .grid {
     gap: 1px;
   }
+
   .fruit-image {
     width: 265px;
     height: 220px;
@@ -538,33 +603,37 @@ h1 {
 
   .fruit-image .h6 {
     position: absolute;
-    top: 50%; /* Adjust top to vertically center the text */
-    left: 50%; /* Adjust left to horizontally center the text */
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Center the text both horizontally and vertically */
+    top: 50%;
+    /* Adjust top to vertically center the text */
+    left: 50%;
+    /* Adjust left to horizontally center the text */
+    transform: translate(-50%,
+        -50%);
+    /* Center the text both horizontally and vertically */
     font-size: 24px;
     font-weight: 700;
-    z-index: 1; /* Start with a higher z-index to be above the image */
+    z-index: 1;
+    /* Start with a higher z-index to be above the image */
     opacity: 0;
-    transition: opacity 0.3s ease; /* Add a smooth transition effect for opacity */
+    transition: opacity 0.3s ease;
+    /* Add a smooth transition effect for opacity */
     color: white;
   }
 
   .fruit-image:hover .img {
-    filter: brightness(0.7); /* Reduce brightness of the image on hover */
+    filter: brightness(0.7);
+    /* Reduce brightness of the image on hover */
   }
 
   .fruit-image:hover .h6 {
-    opacity: 1; /* Make the .h6 element fully visible on hover */
+    opacity: 1;
+    /* Make the .h6 element fully visible on hover */
   }
 }
 
 @media (max-width: 768px) {
   .product .about_taital::before {
-    width: calc(50% - -2px) !important
-   ;
+    width: calc(50% - -2px) !important;
   }
 }
 
@@ -581,29 +650,175 @@ h1 {
 
 @keyframes slideFromTop {
   from {
-    transform: translateY(-100%); /* Slide in from the left */
+    transform: translateY(-100%);
   }
+
   to {
-    transform: translateY(0); /* Stop at the original position */
+    transform: translateY(0);
   }
 }
 
-/* Apply animation to the element with the 'slide-from-left' class */
 .slide-from-top {
-  animation: slideFromTop 1s ease-in-out; /* Adjust duration and timing function as needed */
-  animation-fill-mode: both; /* Keeps the final animation state */
+  animation: slideFromTop 1s ease-in-out;
+  animation-fill-mode: both;
 }
 
 .slide-from-left {
-  animation: slideFromLeft 1s ease-in-out; /* Adjust duration and timing function as needed */
-  animation-fill-mode: both; /* Keeps the final animation state */
+  animation: slideFromLeft 1s ease-in;
+  /* Adjust duration and timing function as needed */
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes slideFromLeft {
   from {
     transform: translateX(-100%);
+    opacity: .5;
   }
+
   to {
     transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+
+
+.productImg {
+  width: 265px;
+  height: 220px;
+  position: relative;
+  transition: filter 0.3s ease;
+}
+
+.productImg .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productImg .h6 {
+  position: absolute;
+  top: 50%;
+  /* Adjust top to vertically center the text */
+  left: 50%;
+  /* Adjust left to horizontally center the text */
+  transform: translate(-50%,
+      -50%);
+  /* Center the text both horizontally and vertically */
+  font-size: 24px;
+  font-weight: 700;
+  z-index: 1;
+  /* Start with a higher z-index to be above the image */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* Add a smooth transition effect for opacity */
+  color: white;
+}
+
+.productImg:hover .img {
+  filter: brightness(0.7);
+  /* Reduce brightness of the image on hover */
+}
+
+.productImg:hover .h6 {
+  opacity: 1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#0000004a, rgb(0 0 0 / 72%));
+  opacity: 0.9;
+  pointer-events: none;
+  /* Make the .h6 element fully visible on hover */
+}
+
+
+.product-container {
+  width: 250px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+  overflow: hidden;
+
+
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform .5s ease-in-out;
+  }
+
+  .h6 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+
+    text-transform: capitalize;
+  }
+
+
+
+}
+
+.product-container:hover {
+  .img {
+    filter: brightness(0.5);
+    transform: scale(1.2)
+  }
+
+  .h6 {
+    opacity: 1;
+    z-index: 10;
+
+  }
+}
+
+
+.product-container::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color1);
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.product-container:hover::before {
+  transform: translateY(-40%);
+}
+
+
+
+
+
+.product {
+  .text-div .h2 {
+    margin-top: 15px;
+    color: #fff;
+    background-color: var(--color2);
+    font-family: 'Merienda', cursive;
+  }
+
+  .text-div .h2:hover {
+    background-color: var(--color1);
+    /* display: inline; */
   }
 }
