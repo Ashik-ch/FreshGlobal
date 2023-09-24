@@ -26,18 +26,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Kurale&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Handlee&family=Montserrat:wght@100;200;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&family=Roboto:wght@100;300&display=swap"
     rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </head>
 
 <body>
+  <div class="to-top" onclick="toTop()">
+    <h4><i class="bi bi-arrow-up-circle-fill"></i></h4>
+  </div>
+
   <!-- header -->
-  <div class=" header">
+  <div class="header">
     <div class="container pt-3">
       <div class="row">
         <div class="col">
           <li class="d-flex gap-3">
-            <p><i class="bi bi-globe2 me-2 p-0"></i> www.globalfresh.com</p>
+            <p><i class="bi bi-globe2 me-2 p-0"></i> www.globalfreshme.com</p>
           </li>
         </div>
         <div class="col">
@@ -51,24 +56,20 @@
       </div>
     </div>
   </div>
-
-  <div class="to-top" onclick="toTop()">
-    <h4><i class="bi bi-arrow-up-circle-fill"></i></h4>
-  </div>
+  <!-- header -->
 
   <!--  -----------NAVBAR------------- -->
-
   <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand ps-4 d-flex" href="index.html">
         <img src="assets/logo1.jpg" alt="" width="55px" height="55px" />
         <div class="d-flex flex-column">
-          <div style="margin-bottom: -7px;"> <span style="color: #ff7700">Global</span> <span style="color: #16a62b;">
-              fresh</span> </div>
-          <div class="" style="font-size: 14.5px;">fruits and Vegetable </div>
+          <div style="margin-bottom: -7px">
+            <span class="c2">Global</span> <span class="c1"> fresh</span>
+          </div>
+          <div style="font-size: 13.5px">Fruits and Vegetables</div>
         </div>
       </a>
-
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,167 +102,145 @@
       </div>
     </div>
   </nav>
-
   <!-- Navbar -->
 
   <!-- Banner Carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-        aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-        aria-label="Slide 5"></button>
-    </div>
-
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="image-container">
-          <img src="assets/healthy-eating-fresh-fruits-vegetables-collection-generated-by-ai_188544-21217.avif"
-            class="d-block w-100 carouesl-img" alt="fresh-vegetables" />
-          <div class="gradient-overlay"></div>
-        </div>
-        <div class="carousel-caption d-md-block">
-          <div class="d-flex justify-content-center slide-from-top">
-            <div style="width: 120px" class="me-3">
-              <img src="assets/GlobalFreshlogoArb.jpg" alt="" class="carouseol-logo" />
-            </div>
-            <div class="d-grid">
-              <h1 class="h5 m-0">
-                Global <span style="color: #16a62b">fresh</span>
-              </h1>
-              <h6 class="h6 m-0 text-start">Fruits And Vegetable</h6>
-            </div>
-          </div>
-          <h1 class="h1 slide-from-left">Feel The Freshness</h1>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="image-container">
-          <img src="assets/dryfruits.avif" class="d-block w-100 carouesl-img" alt="fresh-vegetables" />
-          <div class="gradient-overlay"></div>
-        </div>
-        <div class="carousel-caption d-md-block">
-          <div class="d-flex justify-content-center slide-from-top">
-            <div style="width: 120px" class="me-3">
-              <img src="assets/GlobalFreshlogoArb.jpg" alt="" class="carouseol-logo" />
-            </div>
-
-            <div class="d-grid">
-              <h1 class="h5 m-0">
-                Global <span style="color: #16a62b">fresh</span>
-              </h1>
-              <h6 class="h6 m-0 text-start">Fruits And Vegetable</h6>
-            </div>
-          </div>
-          <h1 class="h1 slide-from-left">No Chemicals and Pesticides</h1>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="image-container">
-          <img src="assets/top-view-vegetables-paper-bag.jpg" class="d-block w-100 carouesl-img" alt="..." />
-          <div class="gradient-overlay"></div>
-        </div>
-        <div class="carousel-caption d-md-block">
-          <div class="d-flex justify-content-center slide-from-top">
-            <div style="width: 120px" class="me-3">
-              <img src="assets/GlobalFreshlogoArb.jpg" alt="" class="carouseol-logo" />
-            </div>
-            <div class="d-grid">
-              <h1 class="h5 m-0">
-                Global <span style="color: #16a62b">fresh</span>
-              </h1>
-              <h6 class="h6 m-0 text-start">Fruits And Vegetable</h6>
-            </div>
-          </div>
-          <h1 class="h1 slide-from-left">No Chemicals and Pesticides</h1>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="image-container">
-          <img src="assets/colorful-collage-fruits-texture-close-up_23-2149870275.avif"
-            class="carouesl-img d-block w-100" alt="fruits" />
-          <div class="gradient-overlay"></div>
-        </div>
-        <div class="carousel-caption d-md-block">
-          <div class="d-flex justify-content-center slide-from-top">
-            <div style="width: 120px" class="me-3">
-              <img src="assets/GlobalFreshlogoArb.jpg" alt="" class="carouseol-logo" />
-            </div>
-            <div class="d-grid">
-              <h1 class="h5 m-0">
-                Global <span style="color: #16a62b">fresh</span>
-              </h1>
-              <h6 class="h6 m-0 text-start">Fruits And Vegetable</h6>
-            </div>
-          </div>
-          <h1 class="h1 slide-from-left">No Chemicals and Pesticides</h1>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="image-container">
-          <img src="assets/close-up-ripe-delicious-vegetables_23-2149082595.avif" class="d-block w-100 carouesl-img"
-            alt="..." />
-          <div class="gradient-overlay"></div>
-        </div>
-        <div class="carousel-caption d-md-block">
-          <div class="d-flex justify-content-center slide-from-top">
-            <div style="width: 120px" class="me-3">
-              <img src="assets/GlobalFreshlogoArb.jpg" alt="" class="carouseol-logo" />
-            </div>
-            <div class="d-grid">
-              <h1 class="h5 m-0">
-                Global <span style="color: #16a62b">fresh</span>
-              </h1>
-              <h6 class="h6 m-0 text-start">Fruits And Vegetable</h6>
-            </div>
-          </div>
-          <h1 class="h1 slide-from-left">No Chemicals and Pesticides</h1>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"">
+    <div class=" carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="image-container">
+        <img src="assets/healthy-eating-fresh-fruits-vegetables-collection-generated-by-ai_188544-21217.avif"
+          class="d-block w-100 carouesl-img" alt="fresh-vegetables" />
+        <div class="gradient-overlay"></div>
+      </div>
+      <div class="carousel-caption d-md-block">
+        <div class="d-flex justify-content-center slide-from-top">
+          <div style="width: 120px">
+            <img src="assets/Global Fresh logo arabic.png" alt="" class="carouseol-logo" />
+          </div>
+          <div class="d-grid">
+            <h1 class="h5 m-0">Global <span class="c1">fresh</span></h1>
+            <h6 class="h6 text-start">Fruits And Vegetables LLC</h6>
+          </div>
+        </div>
+        <h1 class="h1 slide-from-left">Feel the Freshness</h1>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="image-container">
+        <img src="assets/dryfruits.avif" class="d-block w-100 carouesl-img" alt="fresh-vegetables" />
+        <div class="gradient-overlay"></div>
+      </div>
+      <div class="carousel-caption d-md-block">
+        <div class="d-flex justify-content-center slide-from-top">
+          <div style="width: 120px">
+            <img src="assets/Global Fresh logo eng.png" alt="" class="carouseol-logo" />
+          </div>
+          <div class="d-grid">
+            <h1 class="h5 m-0">Global <span class="c1">fresh</span></h1>
+            <h6 class="h6 text-start">Fruits And Vegetables LLC</h6>
+          </div>
+        </div>
+        <h1 class="h1 slide-from-left">No Chemicals and Pesticides</h1>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="image-container">
+        <img src="assets/top-view-vegetables-paper-bag.jpg" class="d-block w-100 carouesl-img" alt="fresh-vegetables" />
+        <div class="gradient-overlay"></div>
+      </div>
+      <div class="carousel-caption d-md-block">
+        <div class="d-flex justify-content-center slide-from-top">
+          <div style="width: 120px">
+            <img src="assets/Global Fresh logo arabic.png" alt="" class="carouseol-logo" />
+          </div>
+          <div class="d-grid">
+            <h1 class="h5 m-0">Global <span class="c1">fresh</span></h1>
+            <h6 class="h6 text-start">Fruits And Vegetables LLC</h6>
+          </div>
+        </div>
+        <h1 class="h1 slide-from-left">No Chemicals and Pesticides</h1>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="image-container">
+        <img src="assets/colorful-collage-fruits-texture-close-up_23-2149870275.avif" class="d-block w-100 carouesl-img"
+          alt="fresh-vegetables" />
+        <div class="gradient-overlay"></div>
+      </div>
+      <div class="carousel-caption d-md-block">
+        <div class="d-flex justify-content-center slide-from-top">
+          <div style="width: 120px">
+            <img src="assets/Global Fresh logo eng.png" alt="" class="carouseol-logo" />
+          </div>
+          <div class="d-grid">
+            <h1 class="h5 m-0">Global <span class="c1">fresh</span></h1>
+            <h6 class="h6 text-start">Fruits And Vegetables LLC</h6>
+          </div>
+        </div>
+        <h1 class="h1 slide-from-left">No Chemicals and Pesticides</h1>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="image-container">
+        <img src="assets/close-up-ripe-delicious-vegetables_23-2149082595.avif" class="d-block w-100 carouesl-img"
+          alt="fresh-vegetables" />
+        <div class="gradient-overlay"></div>
+      </div>
+      <div class="carousel-caption d-md-block">
+        <div class="d-flex justify-content-center slide-from-top">
+          <div style="width: 120px">
+            <img src="assets/Global Fresh logo arabic.png" alt="" class="carouseol-logo" />
+          </div>
+          <div class="d-grid">
+            <h1 class="h5 m-0">Global <span class="c1">fresh</span></h1>
+            <h6 class="h6 text-start">Fruits And Vegetables LLC</h6>
+          </div>
+        </div>
+        <h1 class="h1 slide-from-left">No Chemicals and Pesticides</h1>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 
   <!-- about section start -->
   <section>
-    <div class="about_section position-relative">
+    <div class="about_section">
       <div class="container">
-        <div style="position: relative">
+        <div class="position-relative">
           <!-- <h1 class="about_taital">
             <span class="pe-1" style="color: white">About </span> Us
           </h1> -->
-
           <h1 class="text-center">
-            <span class="section-title fw-bold ">ABOUT US </span>
+            <span class="section-title fw-bold">ABOUT US </span>
           </h1>
-
-
-
         </div>
+
         <div class="about_body">
           <div class="image_iman">
-            <img
-              src="https://img.freepik.com/free-photo/assortment-exotic-fruits-table_23-2148498151.jpg?w=740&t=st=1694801762~exp=1694802362~hmac=8efc22730e4e9dcb7ff4d11076d27617ddc6239db939d7c5aff12ba089f0455f"
-              class="img-fluid w-100" />
+            <img src="assets/about-fruits.avif" class="img-fluid w-100" />
           </div>
-          <div class="about_taital_box slide-from-left">
+          <div class="about_taital_box wow fadeIn">
             <h1 class="about_taital_1 mt-2">
               WELCOME TO GLOBAL FRESH FRUITS AND VEGETABLES L.L.C
             </h1>
@@ -285,44 +264,37 @@
   </section>
   <!-- about section end -->
 
-  <!--      Management2 -->
+  <!-------------Management2 ----------->
   <section class="management-box py-5">
     <div class="container">
-      <div class="row" style="display: flex; margin-inline: 10%">
+      <div class="row mx-5">
         <div class="col-md-12">
-          <div class="intro">
-            <!-- <h2 class="about_taital">
+          <!-- <h2 class="about_taital">
               <span class="text-light">OUR</span> MANAGEMENT
             </h2> -->
-
-            <h1 class="text-center">
-              <span class="section-title fw-bold ">OUR MANAGEMENT </span>
-            </h1>
-
-
-
-          </div>
+          <h1 class="text-center">
+            <span class="section-title fw-bold">OUR MANAGEMENT </span>
+          </h1>
           <div id="testimonial-slider" class="owl-carousel mt-5">
-
-            <div class="testimonial slide-from-left">
+            <div class="testimonial slide-from-left wow" data-wow-delay="0.1s">
               <div class="pic" style="max-height: 320px">
                 <img src="assets/Khalid photo.jpg" alt="" class="h-100 object-fit-cover" />
               </div>
               <div class="testimonial-content">
                 <p class="description">
-                  The business relationship with the GlobalFreshme because of
+                  The business relationship with the Global Fresh because of
                   the company’s par excellence services. We experience very
                   happy with our whole-hearted satisfaction of the company’s
                   working performance and out fellow customers.We will spread
                   fresh food around the world
                 </p>
                 <h3 class="testimonial-title">
-                  Khalid
+                  Khalid essa obaid
                   <small class="post">Chairman</small>
                 </h3>
               </div>
             </div>
-            <div class="testimonial slide-from-left">
+            <div class="testimonial slide-from-left wow" data-wow-delay="0.1s">
               <div class="pic">
                 <img src="assets/MD - umarul farook ehsan.jpg" alt="" />
               </div>
@@ -335,182 +307,259 @@
                   management.
                 </p>
                 <h3 class="testimonial-title">
-                  Umarul farook Whsan
-                  <small class="post">Managing Directors</small>
+                  Umarul farook Ehsan
+                  <small class="post">Managing Director</small>
                 </h3>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- /*--------------- Management2----------------*/ -->
+  <!-- -------------- Management2----------------*->
 
 
-
-  <section class="product my-5">
+  <!--------------  Products ------------ -->
+  <section class="product py-5 bg-body-secondary">
     <div class="proudct-bg"></div>
     <div class="container py-5">
       <!-- <h2 class="about_taital my-5">
         <span class="text-light">Fruits and </span> Vegetable
       </h2> -->
-
       <h1 class="text-center my-5">
-        <span class="section-title fw-bold ">Fruits and Vegetable </span>
+        <span class="section-title fw-bold">Fruits and Vegetables </span>
       </h1>
-
-
-
-      <div class="d-flex flex-wrap justify-content-center grid" id="fruit-grid"></div>
+      <div class="d-flex flex-wrap justify-content-center grid wow" data-wow-delay="0.1s" id="fruit-grid"></div>
     </div>
   </section>
 
-
-
-  <!-- Service Start -->
+  <!--------------  Features Start ------------ -->
   <section class="container-xxl py-5">
     <div class="container">
-      <!-- <div class="text-center"> -->
-      <!-- <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;"></div> -->
       <h1 class="text-center my-5">
-        <span class="section-title fw-bold ">Our Features </span>
+        <span class="section-title fw-bold">Our Features </span>
       </h1>
-
-      <div class="row g-0 service-row">
+      <div class="row g-0 feature-row">
         <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.1s">
-          <div class="service-item border h-100 p-5">
-            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
-              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/4689/4689771.png" alt="Icon">
+          <div class="feature-item border h-100 p-5">
+            <div class="btn-square mb-4">
+              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/4689/4689771.png" alt="Icon" />
             </div>
-            <h4 class="mb-3">Farm Fresh produce</h4>
+            <h4 class="mb-3">Farm Fresh Products</h4>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.2s">
+          <div class="feature-item border h-100 p-5">
+            <div class="btn-square mb-4">
+              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/5957/5957125.png" alt="Icon" />
+            </div>
+            <h4 class="mb-3">Superior Quality</h4>
           </div>
         </div>
         <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.3s">
-          <div class="service-item border h-100 p-5">
-            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
-              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/5957/5957125.png" alt="Icon">
+          <div class="feature-item border h-100 p-5">
+            <div class="btn-square mb-4">
+              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/7448/7448305.png" alt="Icon" />
             </div>
-            <h4 class="mb-3">Superior Quality</h4>
-
-
+            <h4 class="mb-3">Best Price</h4>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.4s">
+          <div class="feature-item border h-100 p-5">
+            <div class="btn-square mb-4">
+              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/12274/12274126.png" alt="Icon" />
+            </div>
+            <h4 class="mb-3">Customer Service</h4>
           </div>
         </div>
         <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.5s">
-          <div class="service-item border h-100 p-5">
-            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
-              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/7448/7448305.png" alt="Icon">
-            </div>
-            <h4 class="mb-3">Best Price</h4>
-
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.7s">
-          <div class="service-item border h-100 p-5">
-            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
-              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/12274/12274126.png" alt="Icon">
-            </div>
-            <h4 class="mb-3">Customer Service</h4>
-
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.7s">
-          <div class="service-item border h-100 p-5">
-            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
-              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/10632/10632609.png " alt="Icon">
+          <div class="feature-item border h-100 p-5">
+            <div class="btn-square mb-4">
+              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/10632/10632609.png " alt="Icon" />
             </div>
             <h4 class="mb-3">Veriety Products</h4>
-
           </div>
         </div>
-        <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.7s">
-          <div class="service-item border  h-100 p-5">
-            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
-              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/726/726455.png" alt="Icon">
+        <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.6s">
+          <div class="feature-item border h-100 p-5">
+            <div class="btn-square mb-4">
+              <img class="img-fluid" src="https://cdn-icons-png.flaticon.com/512/726/726455.png" alt="Icon" />
             </div>
             <h4 class="mb-3">Free Delivery</h4>
-
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Service End -->
+  <!-- feature End -->
 
-
-
-  <!-- Distributipn network -->
-  <section class="bg-body-secondary py-5">
-    <div class="container">
-
-      <h1 class="text-center mb-4 ">
-        <span class="section-title  fw-bold ">Our Distribution Network</span>
+  <!-- Distribution network -->
+  <section class="bg-body-secondary py-5 distribution">
+    <div class="container my-3">
+      <h1 class="text-center">
+        <span class="section-title fw-bold">Our Distribution Network</span>
       </h1>
-      <div class="row ">
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="distribution-item">
-            <div class="overflow-hidden position-relative">
-              <div style="height: 300px; width: 400px;">
-                <img class="img-fluid w-100 h-100 object-fit-cover"
-                  src="https://img.freepik.com/premium-photo/there-are-many-vegetables-shelves-store-generative-ai_955884-13469.jpg?size=626&ext=jpg&ga=GA1.2.641232875.1694852399&semt=ais"
-                  alt="">
-              </div>
-              <div class="distribution-social">
-                <!-- <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+      <div class="mt-5 distribution-row">
+        <div class="distribution-track">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="distribution-item">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://img.freepik.com/premium-photo/there-are-many-vegetables-shelves-store-generative-ai_955884-13469.jpg?size=626&ext=jpg&ga=GA1.2.641232875.1694852399&semt=ais"
+                    alt="" />
+                </div>
+                <div class="distribution-social">
+                  <!-- <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
             <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
             <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a> -->
+                </div>
               </div>
-            </div>
-            <div class="text-center p-4">
-              <h5 class="mb-0">Super Market</h5>
+              <div class="text-center p-4">
+                <h5 class="text">Super Market</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="distribution-item">
-            <div class="overflow-hidden position-relative">
-              <div style="height: 300px; width: 400px;">
-                <img class="img-fluid w-100 h-100 object-fit-cover"
-                  src="https://img.freepik.com/free-photo/healthy-vegetarian-salad-prepa-by-gourmet-chef-generated-by-ai_24640-80675.jpg?t=st=1695451346~exp=1695454946~hmac=3285bb396eb32474efb639f455aaa7e640c9a35d94f0bd9ab8f33db81e957214&w=826"
-                  alt="">
+          <div class="col-lg-3 col-md-6">
+            <div class="distribution-item wow fadeInUp" data-wow-delay="0.3s">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://img.freepik.com/free-photo/healthy-vegetarian-salad-prepa-by-gourmet-chef-generated-by-ai_24640-80675.jpg?t=st=1695451346~exp=1695454946~hmac=3285bb396eb32474efb639f455aaa7e640c9a35d94f0bd9ab8f33db81e957214&w=826"
+                    alt="" />
+                </div>
+                <div class="distribution-social"></div>
               </div>
-              <div class="distribution-social"></div>
-            </div>
-            <div class="text-center p-4">
-              <h5 class="mb-0">Catering Companies</h5>
-
+              <div class="text-center p-4">
+                <h5 class="text">Catering Companies</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="distribution-item">
-            <div class="overflow-hidden position-relative">
-              <div style="height: 300px; width: 400px;">
-                <img class="img-fluid w-100 h-100 object-fit-cover"
-                  src="https://img.freepik.com/premium-photo/produce-section-grocery-stores-heaven-compa-generative-ai_756405-14483.jpg?w=826"
-                  alt="">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="distribution-item">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://img.freepik.com/premium-photo/produce-section-grocery-stores-heaven-compa-generative-ai_756405-14483.jpg?w=826"
+                    alt="" />
+                </div>
+                <div class="distribution-social"></div>
               </div>
-              <div class="distribution-social"></div>
-            </div>
-            <div class="text-center p-4">
-              <h5 class="mb-0">Hyper Market</h5>
-
+              <div class="text-center p-4">
+                <h5 class="text">Hyper Market</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="distribution-item">
-            <div class="overflow-hidden position-relative">
-              <div style="height: 300px; width: 400px;">
-                <img class="img-fluid w-100 h-100 object-fit-cover"
-                  src="https://img.freepik.com/premium-photo/chef-skillfully-chopping-vegetables-bustling-kitchen-showcasing-artistry-passion_333547-12057.jpg?w=740"
-                  alt="">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="distribution-item">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://img.freepik.com/premium-photo/beautiful-lasentha-boutique-hotel-located-hoi-vietnam_265989-8497.jpg?w=740"
+                    alt="" />
+                </div>
+                <div class="distribution-social"></div>
               </div>
-              <div class="distribution-social"></div>
+              <div class="text-center p-4">
+                <h5 class="text">Hotel</h5>
+              </div>
             </div>
-            <div class="text-center p-4">
-              <h5 class="mb-0">Hotel</h5>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="distribution-item">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://galrestaurant.com/wp-content/uploads/2020/07/289384298_371002555125783_8263192442970742581_n-1015x698.jpg"
+                    alt="" />
+                  <!-- src="https://img.freepik.com/premium-photo/chef-skillfully-chopping-vegetables-bustling-kitchen-showcasing-artistry-passion_333547-12057.jpg?w=740" -->
+                </div>
+                <div class="distribution-social"></div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="text">Restaurant</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="distribution-item">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://img.freepik.com/premium-photo/there-are-many-vegetables-shelves-store-generative-ai_955884-13469.jpg?size=626&ext=jpg&ga=GA1.2.641232875.1694852399&semt=ais"
+                    alt="" />
+                </div>
+                <div class="distribution-social">
+                  <!-- <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a> -->
+                </div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="text">Super Market</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="distribution-item">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://img.freepik.com/free-photo/healthy-vegetarian-salad-prepa-by-gourmet-chef-generated-by-ai_24640-80675.jpg?t=st=1695451346~exp=1695454946~hmac=3285bb396eb32474efb639f455aaa7e640c9a35d94f0bd9ab8f33db81e957214&w=826"
+                    alt="" />
+                </div>
+                <div class="distribution-social"></div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="text">Catering Companies</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="distribution-item">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://img.freepik.com/premium-photo/produce-section-grocery-stores-heaven-compa-generative-ai_756405-14483.jpg?w=826"
+                    alt="" />
+                </div>
+                <div class="distribution-social"></div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="text">Hyper Market</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="distribution-item">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://img.freepik.com/premium-photo/beautiful-lasentha-boutique-hotel-located-hoi-vietnam_265989-8497.jpg?w=740"
+                    alt="" />
+                </div>
+                <div class="distribution-social"></div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="text">Hotel</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="distribution-item">
+              <div class="overflow-hidden position-relative">
+                <div class="img-container">
+                  <img class="img-fluid w-100 h-100 object-fit-cover"
+                    src="https://galrestaurant.com/wp-content/uploads/2020/07/289384298_371002555125783_8263192442970742581_n-1015x698.jpg"
+                    alt="" />
+                  <!-- src="https://img.freepik.com/premium-photo/chef-skillfully-chopping-vegetables-bustling-kitchen-showcasing-artistry-passion_333547-12057.jpg?w=740" -->
+                </div>
+                <div class="distribution-social"></div>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="text">Restaurant</h5>
+              </div>
             </div>
           </div>
         </div>
@@ -518,83 +567,49 @@
     </div>
   </section>
 
-
-
-
-
-
-  <style>
-    /*** Team ***/
-    .farm-item .farm-img::before,
-    .farm-item .farm-img::after {
-      position: absolute;
-      content: "";
-      width: 0;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: rgba(2, 92, 65, 0.593);
-      transition: .5s;
-    }
-
-    .farm-item .farm-img::after {
-      left: auto;
-      right: 0;
-    }
-
-    .farm-item:hover .farm-img::before,
-    .farm-item:hover .farm-img::after {
-      width: 50%;
-    }
-  </style>
-
-  <!-- Farm network -->
+  <!--------- Farm  ------ -->
   <section class="container">
     <h1 class="text-center my-5">
-      <span class="section-title fw-bold ">Our Farm</span>
+      <span class="section-title fw-bold">Our Farm</span>
     </h1>
 
-    <div class="row g-4 gap-0 justify-content-center">
-      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="row g-1 gap-0 justify-content-center wow fadeIn">
+      <div class="col-lg-3 col-md-6">
         <div class="farm-item">
           <div class="overflow-hidden position-relative">
-            <div class="farm-img" style="height: 300px; width: 400px;">
-              <img class=" farm-img img-fluid w-100 h-100 object-fit-cover" src="assets/farm1.jpg" alt="">
+            <div class="farm-img">
+              <img class="img-fluid w-100 h-100 object-fit-cover" src="assets/farm1.jpg" alt="" />
             </div>
-
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-lg-3 col-md-6">
         <div class="farm-item">
           <div class="overflow-hidden position-relative">
-            <div class="farm-img" style="height: 300px; width: 400px;">
-              <img class=" farm-img img-fluid w-100 h-100 object-fit-cover " src=" assets/farm2.jpg" alt="">
+            <div class="farm-img">
+              <img class="farm-img img-fluid w-100 h-100 object-fit-cover" src=" assets/farm2.jpg" alt="" />
             </div>
-
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-lg-3 col-md-6">
         <div class="farm-item">
           <div class="overflow-hidden position-relative">
-            <div class="farm-img" style="height: 300px; width: 400px;">
-              <img class=" farm-img img-fluid w-100 h-100 object-fit-cover "
+            <div class="farm-img">
+              <img class="farm-img img-fluid w-100 h-100 object-fit-cover"
                 src="https://img.freepik.com/free-photo/close-up-delicious-organic-cabbage_23-2149125189.jpg?size=626&ext=jpg&ga=GA1.1.641232875.1694852399&semt=ais"
-                alt="">
+                alt="" />
             </div>
-
-
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
         <div class="farm-item">
           <div class="overflow-hidden position-relative">
-            <div class="farm-img" style="height: 300px; width: 400px;">
-              <img class=" farm-img img-fluid w-100 h-100 object-fit-cover "
+            <div class="farm-img">
+              <img class="farm-img img-fluid w-100 h-100 object-fit-cover"
                 src="https://img.freepik.com/free-photo/autumn-fruits-hanging-tree-branch-garden_114579-29954.jpg?size=626&ext=jpg&ga=GA1.1.641232875.1694852399&semt=ais"
-                alt="">
+                alt="" />
             </div>
           </div>
         </div>
@@ -602,10 +617,10 @@
       <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
         <div class="farm-item">
           <div class="overflow-hidden position-relative">
-            <div class="farm-img" style="height: 300px; width: 400px;">
-              <img class=" farm-img img-fluid w-100 h-100 object-fit-cover "
+            <div class="farm-img">
+              <img class="farm-img img-fluid w-100 h-100 object-fit-cover"
                 src="https://img.freepik.com/free-photo/colorful-tomatoes-vegetables-fruits-are-growing-indoor-farm-vertical-farm_181624-42824.jpg?w=740&t=st=1695455402~exp=1695456002~hmac=ea89352aeb0abcdd041b87f83c7aae0fc769314f617e9e7cc33b320fd7603367"
-                alt="">
+                alt="" />
             </div>
           </div>
         </div>
@@ -613,10 +628,10 @@
       <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
         <div class="farm-item">
           <div class="overflow-hidden position-relative">
-            <div class="farm-img" style="height: 300px; width: 400px;">
-              <img class=" farm-img img-fluid w-100 h-100 object-fit-cover "
+            <div class="farm-img">
+              <img class="farm-img img-fluid w-100 h-100 object-fit-cover"
                 src="https://img.freepik.com/free-photo/bouquet-fresh-date-palm-tree_1150-18066.jpg?w=740&t=st=1695455538~exp=1695456138~hmac=2d039aefb1fef64b731cec7eb76276b2c961828d6f87e32482ff3e7ea5144428"
-                alt="">
+                alt="" />
             </div>
           </div>
         </div>
@@ -624,99 +639,80 @@
     </div>
   </section>
 
-
-
-
-
-
-
-
-
-
-  <!-- /*--------------- Footer----------------*/ -->
-  <footer class="text-center text-lg-start text-dark mt-5" style="background-color: #eceff1">
-    <section class="d-flex justify-content-between p-4 text-white" style="background-color: #ff7700">
-      <!-- Left -->
+  <!-- --------------- Footer--------------- -->
+  <footer class="text-center text-lg-start text-dark mt-5">
+    <section class="d-flex justify-content-between p-4 text-white bg2">
       <div class="me-5">
         <span>Get connected with us on social networks:</span>
       </div>
-
       <div>
         <a href="" class="text-white me-4">
           <i class="fab fa-facebook-f"></i>
         </a>
-
         <a href="" class="text-white me-4">
           <i class="fab fa-instagram"></i>
         </a>
-
       </div>
-      <!-- Right -->
     </section>
-    <!-- Section: Social media -->
 
-    <!-- Section: Links  -->
-    <section class="footer">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
+    <section class="footer bg-body-secondary">
+      <div class="container text-center text-md-start pt-5">
         <div class="row mt-3 footer-body">
-          <!-- Grid column -->
           <div class="col-md-4 col-lg-5 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold" style="color: #045e61">
-              Global Fresh Fruits And Vegetable
+            <h6 class="text-uppercase fw-bold c1">
+              Global Fresh Fruits And Vegetables
             </h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p class="w-75" style="text-align: justify;">
+            <p class="w-75" style="text-align: justify">
               Global Fresh Fruits & Vegetables L.L.C is one of the Middle
               East’s leading importers and distributer of fresh fruits and
               vegetables.
             </p>
-
-            <h6 class="text-uppercase fw-bold mt-4" style="color: #045e61" v>
+            <h6 class="text-uppercase fw-bold mt-4 c1" v>
               Certification
             </h6>
             <hr class="mb-1 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <div class="certicate-img d-flex  gap-4" style="width: 80px; height: 80px;">
-              <img src="assets/certiciacate royalCert.png" alt="" class="w-100 h-100">
-              <img src="assets/certiciacate  haccp.avif" alt="" class="w-100 h-100">
+            <div class="certicate-img d-flex gap-4" style="width: 80px; height: 80px">
+              <img src="assets/certiciacate royalCert.png" alt="" class="w-100 h-100" />
+              <img src="assets/certiciacate  haccp.avif" alt="" class="w-100 h-100" />
+              <img src="assets/certificate logo iso.jpg" alt="" class="w-100 h-100" />
             </div>
-
           </div>
 
-          <!-- Grid column -->
           <div class="col-md-4 col-lg-3 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold" style="color: #045e61">
+            <h6 class="text-uppercase fw-bold c1">
               Navigation
             </h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p><a href="#!" class="text-dark">Home</a></p>
-            <p><a href="#!" class="text-dark">Products</a></p>
-            <p><a href="#!" class="text-dark">Gallery</a></p>
-            <p><a href="#!" class="text-dark">Contact</a></p>
-
-            <h6 class="text-uppercase fw-bold mt-4" style="color: #045e61" v>
+            <div class="d-flex flex-column gap-1">
+              <div><a href="#!" class="text-dark">Home</a></div>
+              <div><a href="#!" class="text-dark">Products</a></div>
+              <div><a href="#!" class="text-dark">Gallery</a></div>
+              <div><a href="#!" class="text-dark">Contact</a></div>
+            </div>
+            <h6 class="text-uppercase fw-bold mt-4 c1">
               Opening Hour
             </h6>
             <hr class="mb-1 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-
             <p>Sunday-Saturday: 24 Hour</p>
           </div>
 
           <div class="col-md-5 col-lg-4 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold" style="color: #045e61">
+            <h6 class="text-uppercase fw-bold c1">
               Contact
             </h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
             <p>
               <i class="fas fa-home me-2"></i> Shop No: 79, Block No: 2 <br />
-              Fruits and Vegetable Market, <br />Al Aweer, Ras Al Khor, Dubai,
-              U.A.E
+              Fruits and Vegetables Market, <br />Al Aweer, Ras Al Khor,
+              Dubai, U.A.E
             </p>
             <p><i class="bi bi-globe2 me-2"></i> www.globalfreshme.com</p>
             <p><i class="fas fa-phone me-2"></i>058 587 2261 </p>
-            <p><i class="bi bi-cart-check-fill me-2"></i>  050 186 5001</p>
+            <p>
+              <a href="https://wa.me/+9710501865001" class="text-dark" data-bs-toggle="tooltip"
+                data-bs-placement="bottom" title="Click for Order"><i class="bi bi-whatsapp me-2"></i>  050 186 5001</a>
+            </p>
           </div>
         </div>
       </div>
@@ -729,10 +725,21 @@
   </footer>
   <!-- Footer -->
 
-
-
   <script src="JavaScript.js"></script>
   <script src="product.js"></script>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/parallax/parallax.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

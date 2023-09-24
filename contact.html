@@ -31,13 +31,17 @@
 </head>
 
 <body>
+    <div class="to-top" onclick="toTop()">
+        <h4><i class="bi bi-arrow-up-circle-fill"></i></h4>
+    </div>
+
     <!-- header -->
-    <div class=" header">
+    <div class="header">
         <div class="container pt-3">
             <div class="row">
                 <div class="col">
                     <li class="d-flex gap-3">
-                        <p><i class="bi bi-globe2 me-2 p-0"></i> www.globalfreshm.com</p>
+                        <p><i class="bi bi-globe2 me-2 p-0"></i> www.globalfreshme.com</p>
                     </li>
                 </div>
                 <div class="col">
@@ -51,18 +55,21 @@
             </div>
         </div>
     </div>
-
-    <div class="to-top" onclick="toTop()">
-        <h4><i class="bi bi-arrow-up-circle-fill"></i></h4>
-    </div>
+    <!-- header -->
 
     <!--  -----------NAVBAR------------- -->
-
-    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand ps-4" href="#"><span style="color: #ff7700">
-                    <img src="assets/logo1.jpg" alt="" width="45px" height="45px" />
-                    Global</span><span style="color: #16a62b">fresh</span></a>
+            <a class="navbar-brand ps-4 d-flex" href="index.html">
+                <img src="assets/logo1.jpg" alt="" width="55px" height="55px" />
+                <div class="d-flex flex-column">
+                    <div style="margin-bottom: -7px">
+                        <span class="c2">Global</span> <span class="c1"> fresh</span>
+                    </div>
+                    <div style="font-size: 13.5px">Fruits and Vegetables</div>
+                </div>
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -95,25 +102,20 @@
             </div>
         </div>
     </nav>
-
     <!-- Navbar -->
-
-
 
     <!-- Contact Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
-
                 <div class="col-lg-6 wow fadeIn bg-light p-4" data-wow-delay="0.1s">
                     <h1 class="display-6 mb-5">CONTACT INFO</h1>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px" />
-                    <h5>GLOBALFRESH FRUITS AND VEGETABLE </h5>
-
+                    <h5>GLOBALFRESH FRUITS AND VEGETABLE</h5>
 
                     <p>
-                        <i class="fas fa-home me-2"></i> Shop No: 79, Block No: 2, <br>
+                        <i class="fas fa-home me-2"></i> Shop No: 79, Block No: 2, <br />
                         Fruits and Vegetable Market, <br />Al Aweer, Ras Al Khor, Dubai,
                         U.A.E
                     </p>
@@ -121,11 +123,6 @@
                     <p><i class="fas fa-phone me-2"></i>058 587 2261 </p>
                     <p><i class="bi bi-cart-check-fill me-2"></i>  050 186 5001</p>
                 </div>
-
-
-
-
-
 
                 <!-- <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s"> -->
                 <!-- <h1 class="display-6 mb-5">If You Have Any Query, Please Contact Us</h1>
@@ -167,11 +164,11 @@
                     </div>
                 </form>
             </div> -->
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px">
                     <div class="position-relative overflow-hidden h-100">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.7597863499086!2d55.38617847445684!3d25.1775876324964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f678ec5569d1f%3A0x3a9187586099139d!2sFruits%20And%20Vegetable%20market%20%2C%20Ras%20al%20khor%20-%20Dubai!5e0!3m2!1sen!2sin!4v1694809285817!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -180,81 +177,65 @@
     </div>
     <!-- Contact End -->
 
-
-
-
-    <!-- /*--------------- Footer----------------*/ -->
+    <!-- --------------- Footer--------------- -->
     <footer class="text-center text-lg-start text-dark mt-5" style="background-color: #eceff1">
         <section class="d-flex justify-content-between p-4 text-white" style="background-color: #ff7700">
-            <!-- Left -->
             <div class="me-5">
                 <span>Get connected with us on social networks:</span>
             </div>
-
             <div>
                 <a href="" class="text-white me-4">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-
                 <a href="" class="text-white me-4">
                     <i class="fab fa-instagram"></i>
                 </a>
-
             </div>
-            <!-- Right -->
         </section>
-        <!-- Section: Social media -->
 
-        <!-- Section: Links  -->
         <section class="footer">
             <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
                 <div class="row mt-3 footer-body">
-                    <!-- Grid column -->
                     <div class="col-md-4 col-lg-5 mx-auto mb-4">
-                        <!-- Content -->
                         <h6 class="text-uppercase fw-bold" style="color: #045e61">
-                            Global Fresh Fruits And Vegetable
+                            Global Fresh Fruits And Vegetables
                         </h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <p class="w-75" style="text-align: justify;">
+                        <p class="w-75" style="text-align: justify">
                             Global Fresh Fruits & Vegetables L.L.C is one of the Middle
                             East’s leading importers and distributer of fresh fruits and
                             vegetables.
                         </p>
-
                         <h6 class="text-uppercase fw-bold mt-4" style="color: #045e61" v>
                             Certification
                         </h6>
                         <hr class="mb-1 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <div class="certicate-img d-flex  gap-4" style="width: 80px; height: 80px;">
-                            <img src="assets/certiciacate royalCert.png" alt="" class="w-100 h-100">
-                            <img src="assets/certiciacate  haccp.avif" alt="" class="w-100 h-100">
+                        <div class="certicate-img d-flex gap-4" style="width: 80px; height: 80px">
+                            <img src="assets/certiciacate royalCert.png" alt="" class="w-100 h-100" />
+                            <img src="assets/certiciacate  haccp.avif" alt="" class="w-100 h-100" />
+                            <img src="assets/certificate logo iso.jpg" alt="" class="w-100 h-100" />
                         </div>
-
                     </div>
 
-                    <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 mx-auto mb-4">
-                        <!-- Links -->
                         <h6 class="text-uppercase fw-bold" style="color: #045e61">
                             Navigation
                         </h6>
                         <hr class="mb-4 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
-                        <p><a href="#!" class="text-dark">Home</a></p>
-                        <p><a href="#!" class="text-dark">Products</a></p>
-                        <p><a href="#!" class="text-dark">Gallery</a></p>
-                        <p><a href="#!" class="text-dark">Contact</a></p>
-
-                        <h6 class="text-uppercase fw-bold mt-4" style="color: #045e61" v>
+                        <div class="d-flex flex-column gap-1">
+                            <div><a href="#!" class="text-dark">Home</a></div>
+                            <div><a href="#!" class="text-dark">Products</a></div>
+                            <div><a href="#!" class="text-dark">Gallery</a></div>
+                            <div><a href="#!" class="text-dark">Contact</a></div>
+                        </div>
+                        <h6 class="text-uppercase fw-bold mt-4" style="color: #045e61">
                             Opening Hour
                         </h6>
                         <hr class="mb-1 mt-0 d-inline-block mx-auto"
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
-
                         <p>Sunday-Saturday: 24 Hour</p>
                     </div>
 
@@ -266,12 +247,16 @@
                             style="width: 60px; background-color: #7c4dff; height: 2px" />
                         <p>
                             <i class="fas fa-home me-2"></i> Shop No: 79, Block No: 2 <br />
-                            Fruits and Vegetable Market, <br />Al Aweer, Ras Al Khor, Dubai,
-                            U.A.E
+                            Fruits and Vegetables Market, <br />Al Aweer, Ras Al Khor,
+                            Dubai, U.A.E
                         </p>
                         <p><i class="bi bi-globe2 me-2"></i> www.globalfreshme.com</p>
                         <p><i class="fas fa-phone me-2"></i>058 587 2261 </p>
-                        <p><i class="bi bi-cart-check-fill me-2"></i>  050 186 5001</p>
+                        <p>
+                            <a href="https://wa.me/+9710501865001" class="text-dark" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" title="Click for Order"><i class="bi bi-whatsapp me-2"></i>
+                                 050 186 5001</a>
+                        </p>
                     </div>
                 </div>
             </div>

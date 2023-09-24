@@ -60,3 +60,8 @@ for (var i = 0; i < fruits.length; i++) {
 
   gridContainer.appendChild(fruitDiv);
 }
+
+// Tooltip
+$(function () {
+  $('[data-bs-toggle="tooltip"]').tooltip();
+});
